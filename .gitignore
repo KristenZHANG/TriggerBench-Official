@@ -1,0 +1,28 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+.cursor/
+
+# Local eval / cluster
+benchmark/prospective_memory/main_results/
+*.log
+*smoke*
+
+# Data-generation run outputs (keep seeds + pipeline)
+data_generation/**/outputs/
+
+# Notebooks
+.ipynb_checkpoints/

@@ -1,0 +1,24 @@
+# TriggerBench PM evaluation (client side). Python >= 3.10.
+#
+# Serving vLLM and optional memory methods use extra packages — see comments below.
+#
+#   pip install -r requirements.txt
+#   cd source && cp .env.example .env   # then fill in keys
+
+openai>=1.0
+PyYAML
+tenacity
+python-dotenv
+tiktoken
+numpy
+azure-identity
+
+# Optional: Mem0 method (`source/run_mem0.sh`)
+#   pip install mem0ai
+#   See also https://github.com/mem0ai/mem0
+
+# Optional: A-MEM (`source/run_amem.sh`) imports
+# `benchmark/Memory-in-the-LLM-Era/code/Method/amem/memory_layer.py`.
+# Install what that module imports, or follow upstream:
+#   https://github.com/Yanchen398/Memory-in-the-LLM-Era
+#   pip install rank-bm25 sentence-transformers scikit-learn transformers nltk litellm

@@ -1,0 +1,13 @@
+defaults:
+  temperature: 1.0
+  api_version: "2025-03-01-preview"
+
+max_tokens:
+  default: 2048
+  agent: 512
+  judge: 1024
+  prior_reliance_probe: 512
+
+retry:
+  max_attempts: 5
+  wait_seconds: 30
